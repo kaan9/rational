@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// cannot represent 0
 type Rat struct {
 	factors map[uint] int
 	neg bool
@@ -130,5 +131,4 @@ func main() {
 	fmt.Printf("div: %v\n", r.div(r2))
 	fmt.Printf("inv: %v\n", r.inv())
 	fmt.Printf("pow: %v\n", r.pow(p))
-	fmt.Printf("add: %v\n", r.add(r2))
 }
